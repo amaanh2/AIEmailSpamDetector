@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Spam Detector Dashboard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .scrollable-table {
+      height: 400px;
+      overflow-y: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .performance-section {
+      float: right;
+      width: 30%;
+      height: 400px;
+      padding-left: 20px;
+    }
+    .performance-title {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+    .performance-bar {
+      width: 100%;
+      background-color: #eee;
+      margin-bottom: 20px;
+    }
+    .performance-fill {
+      height: 20px;
+      background-color: #4CAF50;
+      text-align: center;
+      color: white;
+      line-height: 20px;
+    }
+  </style>
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Spam Detector Dashboard</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-white">Team</a><br>
+  </div>
+</nav>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <div class="w3-container" style="margin-top:75px">
+    <h2>Spam Dashboard Analysis</h2>
+    <div style="float: left; width: 65%;">
+      <div class="scrollable-table">
+        <table>
+          <thead>
+          <tr>
+            <th>File</th>
+            <th>Spam Probability (%)</th>
+            <th>Class</th>
+          </tr>
+          </thead>
+          <tbody>
+          <!-- Data will be inserted dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="performance-section">
+      <h3 class="performance-title">Performance Model</h3>
+      <div>Accuracy</div>
+      <div class="performance-bar">
+        <div id="accuracy-fill" class="performance-fill" style="width: 0%;">0%</div>
+      </div>
+      <div>Precision</div>
+      <div class="performance-bar">
+        <div id="precision-fill" class="performance-fill" style="width: 0%;">0%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('testFiles.json')
+      .then(response => response.json())
+      .then(data => {
+          const tbody = document.querySelector('table tbody');
+          let totalSpamProbability = 0;
+          data.forEach(file => {
+              const tr = document.createElement('tr');
+              const tdFileName = document.createElement('td');
+            }
+          )
+        }
+      )
+  })
+</script>
