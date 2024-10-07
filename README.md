@@ -1,4 +1,4 @@
-# Spam Detector
+# AI Email Spam Detector
 
 ## Developers and Associated Github Links
 -	Amaan Ahmed: https://github.com/amaan135
