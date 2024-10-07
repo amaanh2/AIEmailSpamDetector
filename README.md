@@ -1,5 +1,4 @@
-# Assignment 01 - Spam Detector
-CSCI 2020U: Software Systems Development and Integration
+#Spam Detector
 
 ## Developers and Associated Github Links
 -	Amaan Ahmed: https://github.com/amaan135
