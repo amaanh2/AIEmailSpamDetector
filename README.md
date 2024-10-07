@@ -44,10 +44,6 @@ Certainly, let's delve deeper into the explanation of changes and their rational
 - **Cost Consideration:** Factoring in the costs of misclassification helps optimize the threshold for overall performance.
 - **Trade-off Analysis:** ROC curve analysis helps us understand the performance trade-offs at different thresholds, guiding us to choose the most suitable one.[4]
 
-### Further Exploration with More Time:
-
-Given additional time, we'd conduct extensive experiments to fine-tune frequency and classification thresholds. This would involve evaluating various cutoff points to optimize model performance. We'd also rigorously test the model's performance across different scenarios using cross-validation techniques and real-world data. Continuous refinement based on insights gained from experimentation would lead to a more accurate spam detection model.
-
 ## References 
 [1] https://en.wikipedia.org/wiki/Bag-of-words_model 
 
